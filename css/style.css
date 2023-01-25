@@ -1,0 +1,166 @@
+/*RESET
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+
+:root{
+    --primary: #B91F33;
+    --primary-dark: #751320;
+    --dark: #0A0C0E;
+    --light: #E6E6E6;
+    --medium: #666666;
+    --title-dark: #222222;    
+}
+
+body{
+    margin: 0;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    background-color: var(--dark);
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    line-height: 100%;
+}
+
+h2{
+    font-size: 40px;
+    color: var(--light);
+}
+
+p{
+    font-size: 18px;
+    line-height: 100%;
+    color: white;
+}
+
+img{
+    display: block;
+}
+
+/**************Utilitários**************/
+.btn{
+    display: inline-block;
+    padding: 13px 35px 10px 35px; /*top right bottom left*/
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background-color: var(--primary-dark);
+}
+
+.bg-light{
+    background-color: var(--light);
+}
+
+.bg-light h2{
+    color: var(--title-dark);
+}
+
+.bg-light p{
+    color: var(--medium);
+}
+
+/**************Utilitários**************/
+
+.container{
+    max-width: 1116px;
+    margin: 0 auto;
+}
+
+.header{    
+    width: 100%;
+    /*Posição em relação ao elemento pai (desde que ele tenha position) 
+    caso contrário será em relação ao body*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 0;    
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section{
+    background-image: url(../img/background.jpg);
+    background-size: cover;    
+    height: 100vh; /*view height -> 1vh = Altura da tela / 100*/ 
+    
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h1{
+    color: var(--light);
+    font-size: 96px;
+    line-height: 80%;    
+}
+
+.hero-section p{
+    font-size: 20px;
+    max-width: 641px;
+}
+
+.hero-section .container{
+    position: relative; /*Posição em relação a ele mesmo*/
+    top: 70px;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline-block;   
+}
+
+.menu  ul  li  a{
+    color: white;
+    font-size: 18px;
+    font-weight: 700; /*Negrito*/
+    text-decoration: none;
+    margin-left: 81px;
+}
+
+.menu ul li a:hover{
+    border-top: 3px solid var(--primary);    
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.atletic{
+    padding: 50px 0;
+}
+
+.atletic .container{
+    position: relative;    
+}
+
+.content-atletic{
+    max-width: 736px;
+}
+
+.image-atletic{
+    /*posição em relação ao container, pois o container também tem position*/
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+}
